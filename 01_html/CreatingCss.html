@@ -28,6 +28,12 @@
             border-radius: 10px;
              margin: 14px;
         }
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="email"]{
+            width: 20%;
+            margin: 5px 0;
+        }
     </style>
     </head>
     <nav>
@@ -46,4 +52,15 @@
             </p>
             <img src="http://via.placeholder.com/200" alt="sample image"/>
         </div>
+        <!-- creating  a single  form -->
+        <form action="">
+            <label for="name">name:</label>
+            <input type="text" name="name" /> <br/><br/>
+            <label for="">contact number:</label>
+            <input type="number"/><br/><br/>
+            <label for="email">email:</label>
+            <input type="email"/>
+            <input type="submit"/>
+        </form>
     </body>
+    </html>
