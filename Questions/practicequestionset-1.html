@@ -167,12 +167,47 @@
     text-align: left;
 
 }
+.price-card h1{
+    margin-right: 50px;
+}
+.price-list{
+    margin-right: 200px;
+}
 .button-color{
     width: 90px;
     background-color: black;
     color: white;
     margin-left: 10px;
 }
+
+
+/* question5 */
+
+.basic-plan{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0;
+    height: 350px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(195, 34, 34, 0.2);
+    text-align: center;
+}
+.basic-plan ul li{
+    list-style-type:none;
+    padding: 10px;
+}
+.basicplan-button{
+    background-color: red;
+    color: white;
+    width: 100px;
+    margin-left: 100px;
+}
+
 
 </style>
         </head>
@@ -222,6 +257,23 @@
     </ul>
     <input class="button-color" type="button" value="Sign Up">
 </div>
+
+
+
+<!-- question5 -->
+<div class="basic-plan">
+   
+    <h1>Basic Plan</h1>
+    <div class="basicplan-price">$29.99/mo</div>
+    <ul>
+        <li>For family who live together</li>
+        <li>Ad-free music listening</li>
+        <li>Download 10k songs/device</li>
+        <li>Login from 5 devices</li>
+    </ul>
+    <input class="basicplan-button" type="button" value="Sign Up">
+</div>
+
 
         </body>
 </html>
