@@ -5,14 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Card Example</title>
         <style>
+            
             /* question1 */
         .card {
             height: 500px;
             width: 400px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2, green, blue, alpha);
         border-radius: 10px;
-        background-color:bisque;
+        background-color:whitesmoke;
         text-align:center;
+        align-items: center;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -20,9 +22,11 @@
         justify-content: center;
     }
     .card img{
-        height: auto;
-        width: 100%;
-        margin:20px;
+        height: 100%;
+        width:450px;
+        margin:10px;
+        margin-right:300px;
+
     }
     .card h1 {
     font-size: 24px;
@@ -35,14 +39,142 @@
     font-size: 16px;
     color: #777;
 }
-        </style>
+
+
+
+
+
+/* question2 */
+    
+.card2{
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+     background-color: #f0f0f0;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+.card2-image{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+.card2-content{
+    text-align: center;
+    display: flex;
+    padding:10px;
+    flex-direction: column;
+    height: 30%;
+}
+.card2 h2{
+    font-size: 24px;
+    margin: 10px 0 5px;
+
+}
+.card2 p{
+    font-size:20px;
+    color:red;
+}
+
+
+
+
+
+/* question3 */
+.lizard-card{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2, green, blue, alpha);
+    border: 1px solid #ddd;
+    margin: 0;
+    border: 15px solid rgb(219, 215, 215);
+    
+}
+.lizard-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-top:34px;
+}
+.lizard-card h1{
+    margin: 0;
+    font-size: 20px;
+    color:whitesmoke;
+}
+.lizard-card p{
+    margin: 10px 0;
+    color:whitesmoke;
+}
+
+.lizard-content{
+    
+    justify-content: space-between;
+    padding: 0 20px 70px;
+    display: inline;
+    margin-right:200px;
+}
+.lizard-content a{
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.lizard-content a:hover{
+    text-decoration: underline;
+}
+
+
+</style>
         </head>
         <body>
+
             <!-- question1 -->
 <div class="card">
     <img src="/Questions/th (1).jpeg" alt="image"/>
     <h1>Card Title</h1>
     <p>Card Description</p>
 </div>
+
+
+
+<!-- question2 -->
+<div class="card2">
+    <img src="th (1).jpeg" alt="" class="card2-image"/>
+    <div class="card2-content">
+    <h2>Card Title</h2>
+    <p>Card Description</p>
+</div>
+</div>
+
+
+
+<!-- question3 -->
+<div class="lizard-card">
+    <img src="/Questions/OIP.jpeg" alt=""/>
+    <h1>Lizards</h1>
+<p>Lizards are a widespread group of squamate<br>reptiles,with over 6,000 species,ranging<br>across all continents except Antarctica.</p>
+<div class="lizard-content">
+    <a href="#">Share</a>
+    <a href="#">Learn more</a>
+</div>
+</div>
+
+
         </body>
 </html>

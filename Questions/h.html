@@ -1,136 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Example</title>
-    
+    <title>Info Card</title>
     <style>
         body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.card {
-    width: 400px;
-    height: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-image {
-    width: 100%;
-    height: auto;
-}
-
-.card-content {
-    text-align: center;
-    padding: 10px;
-}
-
-.card-title {
-    font-size: 24px;
-    margin: 10px 0 5px;
-}
-
-.card-description {
-    font-size: 16px;
-    color: #777;
-}
-
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .info-card {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .info-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .info-card .content {
+            padding: 20px;
+            flex: 1;
+        }
+        .info-card .content h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .info-card .content p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .info-card .actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px 20px;
+        }
+        .info-card .actions a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .info-card .actions a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="/Questions/th (1).jpeg" alt="Image" class="card-image">
-        <div class="card-content">
-            <h2 class="card-title">Card Title</h2>
-            <p class="card-description">Card Description</p>
+    <div class="info-card">
+        <img src="https://via.placeholder.com/400x150" alt="Card Image">
+        <div class="content">
+            <h3>Card Title</h3>
+            <p>This is a description of the card content. It provides a brief overview of the information contained in the card.</p>
+        </div>
+        <div class="actions">
+            <a href="#">Share</a>
+            <a href="#">Learn More</a>
         </div>
     </div>
 </body>
 </html>
-
-
-
-
-
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Example</title>
- <style>
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.card {
-    width: 500px;
-    height: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-image {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-}
-
-.card-content {
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 30%;
-}
-
-.card-title {
-    font-size: 24px;
-    margin: 10px 0 5px;
-}
-
-.card-description {
-    font-size: 16px;
-    color: #777;
-}
-
- </style>
-</head>
-<body>
-    <div class="card">
-        <img src="th (1).jpeg" alt="Image" class="card-image">
-        <div class="card-content">
-            <h2 class="card-title">Card Title</h2>
-            <p class="card-description">Card Description</p>
-        </div>
-    </div>
-</body>
-</html>
-
-
-
 
