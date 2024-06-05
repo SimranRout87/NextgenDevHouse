@@ -1,77 +1,86 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Card</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
-        }
-        .info-card {
-            width: 400px;
-            height: 300px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-        .info-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-        .info-card .content {
-            padding: 20px;
-            flex: 1;
-        }
-        .info-card .content h3 {
-            margin: 0;
-            font-size: 20px;
-            color: #333;
-        }
-        .info-card .content p {
-            margin: 10px 0;
-            color: #666;
-        }
-        .info-card .actions {
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px 20px;
-        }
-        .info-card .actions a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .info-card .actions a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="info-card">
-        <img src="https://via.placeholder.com/400x150" alt="Card Image">
-        <div class="content">
-            <h3>Card Title</h3>
-            <p>This is a description of the card content. It provides a brief overview of the information contained in the card.</p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Price Card</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+                margin: 0;
+            }
+            .price-card {
+                width: 300px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+                overflow: hidden;
+                text-align: center;
+            }
+            .price-card h2 {
+                background-color: #007bff;
+                color: #fff;
+                padding: 20px 0;
+                margin: 0;
+            }
+            .price-card .price {
+                font-size: 36px;
+                color: #333;
+                margin: 20px 0;
+            }
+            .price-card .price span {
+                font-size: 16px;
+                color: #888;
+            }
+            .price-card ul {
+                list-style: none;
+                padding: 0;
+                margin: 20px 0;
+                text-align: left;
+            }
+            .price-card ul li {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+            }
+            .price-card ul li:last-child {
+                border-bottom: none;
+            }
+            .price-card button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 15px;
+                width: 100%;
+                font-size: 16px;
+                cursor: pointer;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+            .price-card button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="price-card">
+            <h2>Basic Plan</h2>
+            <div class="price">$9.99 <span>/ month</span></div>
+            <ul>
+                <li>10 GB Storage</li>
+                <li>24/7 Support</li>
+                <li>Free Updates</li>
+                <li>Access to All Features</li>
+            </ul>
+            <button>Sign Up</button>
         </div>
-        <div class="actions">
-            <a href="#">Share</a>
-            <a href="#">Learn More</a>
-        </div>
-    </div>
-</body>
-</html>
-
+    </body>
+    </html>
+    
+    
+    
