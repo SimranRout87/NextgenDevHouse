@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>questions</title>
     <style>
-      /* Questions 1  */
+      body{
+        display: flex;
+        flex-direction: column;
+      }
+    
     h1{
+     
      font-size: 36px;
      margin: 20px;
      font-family:serif;
@@ -14,24 +19,29 @@
     }
     p{
      font-size: 18px;
-     color: #333333;
-     height: 1.5px;
+     color: black;
      font-family: serif;
      text-align: center;
      
     }
        /* question 2  */
-         li{
+       /* .listStyling{
+        display: flex;
+        flex-direction: column;
+       }
+        */
+      .listStyling  ul li{
+        width: 50%;
     font-size: 18px;
-    color:#333333;
+    color:black;
     padding: 10px;
-    border: 1px solid #cccccc;
+    border: 1px dashed  solid black;
     border-radius: 5px;
     margin: 5px;
     list-style-type: none;
 } 
     /* qustion 3  */
-    li{
+    ul li{
         font-size: 18px;
     color:black;
     padding: 10px;
@@ -39,9 +49,11 @@
     border-radius: 5px;
     margin: 5px;
     list-style-type: none;
+    text-align: center;
         
     }
-    .list2{
+    .items{
+      width: 50%;
         font-size: 18px;
         border:dashed;
         color:red;
@@ -149,7 +161,7 @@ font-family:'open sans',sans-serif;
         reprehenderit magni veritatis id dicta repellat, consequuntur <br>
         soluta neque voluptates.</p> 
        <!-- quetion 2 -->
-          <ul class="list">
+          <ul class="listStyling">
             <li>Item1</li>
             <li>Item2</li>
             <li>Item3</li>
@@ -157,7 +169,7 @@ font-family:'open sans',sans-serif;
             <li>Item5</li>
           </ul>  
           <!-- question 3  -->
-          <ul class="list2">
+          <ul class="items">
             <li>Item1</li>
             <li>Item2</li>
             <li>Item3</li>
